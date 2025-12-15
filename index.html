@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#header">Home</a></lsi>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">My Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="header-wrapper">
+        <div class="header-text">
+            <p>Welcome to my portfolio</p>
+            <h1>Hi, I'm <span>Abhimanyu </span></h1>
+        </div>
+        <div class="header-image">
+            <img src="images/pic.png" alt="Abhimanyu Guleria">
+        </div>
+    </div>
+</div>
+
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/image.png" alt="User">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I am an aspiring web and Java Developer with a passion for software development, problem solving, and building robust applications.I try my best, and I am always keen to learn new things, and I take my time and properly understands the topic. My objective is to apply my learning’s into real-world solutions. My career objective is to become a proficient Software Engineer specializing in Java as well as web development</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming</span><br>JAVA, C, C++</li>
+                            <li><span>Web Development</span><br>HTML, CSS, JAVASCRIPT</li>
+                            <li><span>DSA</span><br>DATA STRUCTURES AND ALGORITHM</li>
+                            <li><span>Tools</span><br>GIT, GITHUB, VS CODE</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="certifications">
+                        <div class="certifications-section">
+        <h4 style="color: #ff004f; margin: 20px 0 15px 0; font-size: 16px;">Certifications</h4>
+        <ul>
+            <li>
+                <a href="certificates/IBM_.pdf" target="_blank" class="cert-link">
+                    <span>AI & Cloud Technology Intern</span>
+                </a>
+                <br>Edunet Foundation | SEPT 2025 - OCT 2025
+            </li>
+            <li>
+                <a href="certificates/eCertificateOracle.pdf" target="_blank" class="cert-link">
+                    <span>Oracle APEX Cloud Developer Certified Professional</span>
+                </a>
+                <br>OCT 2025
+            </li>
+            <li>
+                <a href="certificates/Programming In Java.pdf" target="_blank" class="cert-link">
+                    <span>Programming In Java (Elite Score: 85%)</span>
+                </a>
+                <br>NPTEL - IIT Kharagpur | Funded by MoE, Govt. of India
+            </li>
+            <li>
+                <a href="certificates/CS50x.pdf" target="_blank" class="cert-link">
+                    <span>CS50: Introduction to Computer Science</span>
+                </a>
+                <br>Harvard University | JULY 2024
+            </li>
+            <li>
+                <a href="certificates/UC-829d4274-c395-4f0f-9bc2-377016c6a5d0.jpg" target="_blank" class="cert-link">
+                    <span>Java Training Crash Course</span>
+                </a>
+                <br>Udemy | OCT 2025
+            </li>
+        </ul>
+    </div>
+</div>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech CSE</span><br>SRM Institute of Science and Technology, KTR, Chennai</li>
+                            <li><span>12th Grade</span><br>Sanskar Public School, Gwalior</li>
+                            <li><span>10th Grade</span><br>Delhi Public School, Gwalior</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+   <!-- Portfolio Section -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+            <!-- Project 1: Tribute Website -->
+            <div class="work">
+                <img src="images/tribute.png" alt="Tribute Website">
+                <div class="layer">
+                    <div class="project-content">
+                        <h3>Tribute Website</h3>
+                        <p>Static Website</p>
+                        <p class="tech-stack">HTML • CSS • JavaScript</p>
+                        <p class="description">By seamlessly integrating HTML, CSS, JavaScript, I created an immersive online experience that celebrates the remarkable contributions of iconic figures in Indian history.</p>
+                        <a href="https://abhimanyuguleria.github.io/abhicode/" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> View Project
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: AI Voice Lecture to Notes -->
+            <div class="work">
+                <img src="images/Ai.png" alt="AI Voice Lecture to Notes">
+                <div class="layer">
+                    <div class="project-content">
+                        <h3>AI Voice Lecture to Notes</h3>
+                        <p>Web Application</p>
+                        <p class="tech-stack">Python • Streamlit • AI/ML</p>
+                        <p class="description">A solution to convert spoken lectures into text using speech-to-text AI and summarize content into clear study notes, quizzes, and flashcards using generative AI.</p>
+                        <a href="https://lecture-notes-85pya8c4ni82gesvvvzinm.streamlit.app/" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> View Project
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> abhimanyuguleriaixf@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +91 9630095780</p>
+                   
+                    <a href="certificates/Resume2nd.pdf" class="btn btn2" target="_blank">Download Resume</a>
+                </div>
+                <<div class="contact-right">
+    <h3 style="color: #fff; margin-bottom: 20px;">Get In Touch</h3>
+    <p style="color: #ababab; line-height: 1.8; margin-bottom: 30px;">
+        I'm always open to new opportunities and interesting projects. Feel free to reach out to me through any of the platforms below. I'll get back to you as soon as possible!
+    </p>
+    <div class="contact-links">
+        <a href="mailto:abhimanyuguleriaixf@gmail.com" class="contact-link">
+            <i class="fas fa-envelope"></i> Email Me
+        </a>
+        <a href="https://www.linkedin.com/in/abhimanyu-guleria-b6753b318/" target="_blank" class="contact-link">
+            <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/AbhimanyuGuleria" target="_blank" class="contact-link">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+    </div>
+</div>
+
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
